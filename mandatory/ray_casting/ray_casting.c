@@ -6,13 +6,14 @@
 /*   By: moel-amr <moel-amr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 12:34:11 by moel-amr &        #+#    #+#             */
-/*   Updated: 2025/08/12 12:59:20 by moel-amr         ###   ########.fr       */
+/*   Updated: 2025/08/13 15:15:04 by moel-amr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/cub3D.h"
 
-void	calculate_first_intersection(t_ray_cast_data *data, t_all_data *all_data)
+void	calculate_first_intersection(t_ray_cast_data *data,
+		t_all_data *all_data)
 {
 	if (data->x_ray_direction > 0)
 		data->ray_distance_x = data->delta_x * ((data->map_x + 1)
